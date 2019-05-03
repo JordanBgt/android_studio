@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.plats.Plat;
@@ -28,7 +29,12 @@ public class PlatAdapter extends ArrayAdapter<Plat> {
         TextView tv1 = v.findViewById(R.id.item_text);
         tv1.setText(data.getLabel());
         TextView tv2 = v.findViewById(R.id.item_prix);
-        tv2.setText(data.getPrix().toString());
+        tv2.setText(data.getPrix()+" €");
+        ImageView img = v.findViewById(R.id.item_image);
+        // à partir du nom on récupère le drawable qui correspond
+        Context context = this.getContext();
+        int id = context.getResources().getIdentifier(data.getImageUrl(), "drawable", context.getPackageName());
+        img.setImageResource(id);
         return v;
     }
 }

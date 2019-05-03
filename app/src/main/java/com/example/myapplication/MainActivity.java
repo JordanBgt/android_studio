@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
 
         } else if (v.getId() == R.id.upload_rate){
+            Intent i = new Intent(this, RateActivity.class);
+            startActivity(i);
 
         }else if (v.getId() == R.id.upload_map) {
 

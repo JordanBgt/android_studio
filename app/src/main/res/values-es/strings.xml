@@ -6,4 +6,5 @@
     <string name="password">contraseña</string>
     <string name="connection">Conectar</string>
     <string name="connectionError">Login or contraseña problemo</string>
+    <string name="sendRate"></string>
 </resources>
