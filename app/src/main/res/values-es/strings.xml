@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jojinou Aplicación</string>
+    <string name="greetings">"Hola"</string>
+    <string name="login">Login</string>
+    <string name="password">contraseña</string>
+    <string name="connection">Conectar</string>
+    <string name="connectionError">Login or contraseña problemo</string>
+</resources>
